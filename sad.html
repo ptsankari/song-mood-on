@@ -83,7 +83,7 @@ p{
 }
 #boxgame{
     width: 170px;
-    height: 100px;
+    height: 150px;
     padding:5px;
     background-color:#9BB8CD;
     margin: 5px;
@@ -189,21 +189,32 @@ p{
         </div>
 
     
-        
-        <div id="boxgame">
-           <p>click me</p>
-
-        </div>
-        
-    
         <div id="boxgame" onclick="oddman2()">
             <div id="findout">
            <p id="findans2">click me</p>
            </div>
            
         </div>
+
+        <div id="boxgame">
+           <p>click me</p>
+
+        </div>
+        
+    
+        <div id="boxgame" onclick="oddman3()">
+            <div id="findout">
+           <p id="findans3">click me</p>
+           </div>
+           
+        </div>
        
         <div id="boxgame">
+            <p>click me</p>
+            
+         </div>
+
+         <div id="boxgame">
             <p>click me</p>
             
          </div>
@@ -230,11 +241,15 @@ const links=['https://www.youtube.com/watch?v=Gqfq_8jPw8Q',
 
 
     function oddman(){
-        document.getElementById('findans').innerHTML="Relax, life is beautiful"
+        document.getElementById('findans').innerHTML="First,accept the sadness.Realize that without<br> losing,wining isnt so great."
     }
 
     function oddman2(){
-        document.getElementById('findans2').innerHTML="Sometimes the most productive thing<br>you can do is relax."
+        document.getElementById('findans2').innerHTML="The feeling which you are currenlty experiencing will<br> not last forever"
+    }
+
+    function oddman3(){
+        document.getElementById('findans3').innerHTML="Everything will be alright soon honey"
     }
 </script>
 </body>
