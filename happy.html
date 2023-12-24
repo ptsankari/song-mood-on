@@ -96,7 +96,7 @@ p{
     list-style: none;
 }
 #boxgame{
-    width: 170px;
+    width: 350px;
     height: 100px;
     padding:5px;
     background-color: #dacdf4;
@@ -124,7 +124,7 @@ p{
     <h4 style="margin-top: 90px;">Here are some songs to listen based on your mode:</h4>
     <center>
         
-<div id="main" style="display: -webkit-inline-box;">
+<div id="main" style="display:flex;flex-wrap: wrap;justify-content:center ;">
 
     <a href="https://www.youtube.com/watch?v=MysKegBRtaA">
     <div id="song1" style="display:-webkit-inline-box;">
@@ -185,33 +185,38 @@ p{
 <br>
 
 <center>
-    <div id="main" style="display:flex;justify-content: space-evenly;">
+    <div id="main" style="display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;">
 
-      
-        <div id="boxgame">
-        <p>click me</p>
-        </div>
-
-    
-        
-        <div id="boxgame">
-           <p>click me</p>
-
-        </div>
-        
-    
         <div id="boxgame" onclick="oddman()">
             <div id="findout">
            <p id="findans">click me</p>
-           </div>
-           
+           </div>  
         </div>
        
-        <div id="boxgame">
-            <p>click me</p>
-            
-         </div>
-    
+        <div id="boxgame" onclick="oddman2()">
+            <div id="findout">
+           <p id="findans2">click me</p>
+           </div>
+        </div>
+
+
+
+        <div id="boxgame" onclick="oddman3()">
+            <div id="findout">
+           <p id="findans3">click me</p>
+           </div>  
+        </div>
+       
+        <div id="boxgame" onclick="oddman4()">
+            <div id="findout">
+           <p id="findans4">click me</p>
+           </div>
+        </div>
+
+
+       
         </div>
     </center>
 
@@ -233,6 +238,23 @@ const links=['https://www.youtube.com/watch?v=50-_oTkmF5I&t=129s',
     function oddman(){
         document.getElementById('findans').innerHTML="You deserve to be happy!"
     }
+
+
+    function oddman2(){
+        document.getElementById('findans2').innerHTML="You glow differently when you're<br> actually happy."
+    }
+
+
+    function oddman3(){
+        document.getElementById('findans3').innerHTML="Be happy for this moment.<br>This moment is your life"
+    }
+
+    
+    function oddman4(){
+        document.getElementById('findans4').innerHTML="Happy girls are boys are the prettiest."
+    }
+
+
         </script>
 </body>
 </html>
