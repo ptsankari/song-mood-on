@@ -31,7 +31,7 @@
         background-color: #A1EEBD;
         border:none;
        margin-bottom: 90px;
-        float:left;
+        
 
     }
     #box2{
@@ -55,25 +55,9 @@
 
     #song1{
         background-color:#A1EEBD;
-        width:450px;
-        height:200px;
+        width:360px;
         margin-left: 30px;
-    }
-
-
-    #song2{
-        background-color: #A1EEBD;
-        width:500px;
-        height:200px;
-        margin-left: 30px;
-    }
-
-    #song3{
-        background-color:#A1EEBD;
-        width:450px;
-        height:200px;
-        margin-left: 30px;
-      
+        margin: 20px;
     }
 li{
     text-decoration: none;
@@ -96,11 +80,12 @@ p{
     list-style: none;
 }
 #boxgame{
-    width: 170px;
+   width: 350px;
     height: 100px;
     padding:5px;
     background-color:#A1EEBD;
     margin: 5px;
+    
 }
 </style>
 <body>
@@ -124,14 +109,14 @@ p{
     <h4 style="margin-top: 90px;">Here are some songs to listen based on your mode:</h4>
     <center>
         
-<div id="main" style="display: -webkit-inline-box;">
+<div id="main" style="display:flex;flex-wrap: wrap;justify-content:center ;">
 
     <a href="https://www.youtube.com/watch?v=0pwttmAYCTw">
     <div id="song1" style="display:-webkit-inline-box;">
-        <img src="tiredsong.jpg" style="width:200px">
+        <img src="tiredsong.jpg" style="width:170px">
         <ul>
             <li style="font-family:'Poppins', sans-serif;
-            font-size: 24px;text-decoration: none;">This Town</li>
+            font-size: 24px;text-decoration: none;float: left;">This Town</li>
             <li style="font-family:'Poppins', sans-serif;
             font-size: 15px; ">Kygo ft.Sasha Sloan</li>
         </ul>
@@ -140,7 +125,7 @@ p{
 
       <a href="https://www.youtube.com/watch?v=yzNAGy_EdI8"> 
     <div id="song1" style="display:-webkit-inline-box;">
-        <img src="mine.jpg" style="width:200px">
+        <img src="mine.jpg" style="width:170px">
         <ul>
             <li style="font-family:'Poppins', sans-serif;
             font-size: 24px;">Mine</li>
@@ -151,8 +136,8 @@ p{
     </a>
 
 <a href="https://www.youtube.com/watch?v=arYQrVEFwHI">
-    <div id="song3" style="display:-webkit-inline-box;">
-        <img src="shower.jpg" style="width:200px">
+    <div id="song1" style="display:-webkit-inline-box;">
+        <img src="shower.jpg" style="width:170px">
         <ul>
             <li style="font-family:'Poppins', sans-serif;
             font-size: 24px;">Shower</li>
@@ -182,7 +167,9 @@ p{
 <br>
 
 <center>
-    <div id="main" style="display:flex;justify-content: space-evenly;">
+    <div id="main" style="display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;">
 
       
 
