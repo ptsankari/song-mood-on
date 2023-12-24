@@ -9,6 +9,11 @@
     <title>happy</title>
 </head>
 <style>
+    a{
+        text-decoration: none;
+        list-style: none;
+
+    }
     h3{
         font-family:'Poppins', sans-serif;
         font-size: 30px; 
@@ -87,6 +92,14 @@ li{
 
 p{
     font-family:'Poppins', sans-serif;
+    text-decoration: none;
+    list-style: none;
+}
+#boxgame{
+    width: 170px;
+    height: 100px;
+    padding:5px;
+    background-color: #dacdf4;
 }
 </style>
 <body>
@@ -112,7 +125,7 @@ p{
         
 <div id="main" style="display: -webkit-inline-box;">
 
-    <a href="https://www.youtube.com/watch?v=MysKegBRtaA">
+    <a href="https://www.youtube.com/watch?v=0pwttmAYCTw">
     <div id="song1" style="display:-webkit-inline-box;">
         <img src="song1.jpg" style="width:200px">
         <ul>
@@ -159,9 +172,47 @@ p{
 
     <p>Check it out!</p>
     <br>
-    <p id="ans"></p>
-</center>
+    <p id="ans" style="text-decoration: none;"></p>
 
+    <br>
+    <br>
+    
+</center>
+<h4>Try this out</h4>
+
+<p style="margin-left: 30px;">Choose a random box for a quote</p>
+<br>
+
+<center>
+    <div id="main" style="display:flex;justify-content: space-evenly;">
+
+      
+        <div id="boxgame">
+        <p>click me</p>
+        </div>
+
+    
+        
+        <div id="boxgame">
+           <p>click me</p>
+
+        </div>
+        
+    
+        <div id="boxgame" onclick="oddman()">
+            <div id="findout">
+           <p id="findans">click me</p>
+           </div>
+           
+        </div>
+       
+        <div id="boxgame">
+            <p>click me</p>
+            
+         </div>
+    
+        </div>
+    </center>
 
 
 
@@ -175,6 +226,11 @@ const links=['https://www.youtube.com/watch?v=50-_oTkmF5I&t=129s',
         const indexnum=Math.floor(Math.random()*links.length);
         const ranlink=links[indexnum];
         document.getElementById('ans').innerHTML=`<a href="${ranlink}" target="_blank">${ranlink}</a>`
+    }
+
+
+    function oddman(){
+        document.getElementById('findans').innerHTML="You deserve to be happy!"
     }
         </script>
 </body>
