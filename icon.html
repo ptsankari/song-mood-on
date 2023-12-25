@@ -1,0 +1,255 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@500&display=swap" rel="stylesheet">
+    <title>fashion icon</title>
+</head>
+<style>
+    a{
+        text-decoration: none;
+        list-style: none;
+
+    }
+    h3{
+        font-family:'Poppins', sans-serif;
+        font-size: 30px; 
+        text-decoration: none;
+    }
+
+    h4{
+        font-family:'Poppins', sans-serif;
+        font-size: 25px; 
+        margin-left: 30px;
+    }
+
+    #box{
+        width:max-content;
+        background-color:#AC87C5;
+        border:none;
+       margin-bottom: 90px;
+        float:left;
+
+    }
+    #box2{
+        width:max-content;
+        margin-top: 90px;
+        background-color:#AC87C5;
+        
+        border:none;
+        text-align: center;
+
+    }
+
+    #box3{
+        width:max-content;
+        background-color:#AC87C5;
+        border:none;
+        float: right;
+
+    }
+
+    #song1{
+        background-color:#AC87C5;
+        width:420px;
+        height:200px;
+        margin: 20px;
+    
+    }
+li{
+    text-decoration: none;
+    list-style:none;
+    color: black;
+    float: left;
+}
+
+    #action{
+        background-color:#AC87C5;
+        color: black;
+        border-radius: 15px;
+        width: 300px;
+        border: solid;
+        border-color:#AC87C5;
+    }
+
+p{
+    font-family:'Poppins', sans-serif;
+    text-decoration: none;
+    list-style: none;
+}
+#boxgame{
+    width: 170px;
+    height: 150px;
+    padding:5px;
+    background-color:#AC87C5;
+    margin: 5px;
+}
+</style>
+<body>
+    <br><br>
+    
+  <!-- <div id ="box">
+        <h3>You deserve to be happy!</h3>
+    </div>
+    <br><br>
+<center>
+    <div id="box2">
+        <h3>Look at you all lively <br>and cute >u< </h3>
+    </div>
+    </center>
+<br><br>
+    <div id="box3">
+        <h3>I'm glad that you are doing well in life!<br>you are a star, keep shining</h3>
+    </div>
+-->
+<br><br>
+    <h4 style="margin-top: 90px;">Here are some songs to listen based on your mode:</h4>
+    <center>
+        
+<div id="main" style="display:flex;flex-wrap: wrap;justify-content:center ;">
+
+    <a href="https://www.youtube.com/watch?v=THuJja1hFqc">
+    <div id="song1" style="display:-webkit-inline-box;">
+        <img src="gimme.jpg" style="width:200px">
+        <ul>
+            <li style="font-family:'Poppins', sans-serif;
+            font-size: 24px;text-decoration: none;">Gimme More</li>
+            <br>
+            <li style="font-family:'Poppins', sans-serif;
+            font-size: 15px; ">Britney Spears</li>
+        </ul>
+    </div>
+</a>
+
+      <a href="https://www.youtube.com/watch?v=MXIKzekRAj8"> 
+    <div id="song1" style="display:-webkit-inline-box;">
+        <img src="baddie.jpg" style="width:200px">
+        <ul>
+            <li style="font-family:'Poppins', sans-serif;
+            font-size: 24px;">Baddie</li>
+            <br>
+            <li style="font-family:'Poppins', sans-serif;
+            font-size: 15px; ">IVE</li>
+        </ul>    
+    </div>
+    </a>
+
+<a href="https://www.youtube.com/watch?v=C8nObVkgCEM">
+    <div id="song1" style="display:-webkit-inline-box;">
+        <img src="obsess.jpg" style="width:200px">
+        <ul>
+            <li style="font-family:'Poppins', sans-serif;
+            font-size: 24px;">Obsessed</li>
+            <br>
+            <li style="font-family:'Poppins', sans-serif;
+            font-size: 15px; ">Mariah Carey</li>
+        </ul>  
+    </div>
+    </a>
+
+    </div>
+</center>
+
+    <h4>Or try out random ones</h4>
+   <center>
+<button onclick="generate()" id="action"><h3 style="font-family:'Poppins', sans-serif;
+    font-size: 25px;">Click me for random songs</h3></button>
+    <br>
+
+    <p>Check it out!</p>
+    <br>
+    <p id="ans" style="text-decoration: none;"></p>
+</center>
+
+<h4>Try this out</h4>
+
+<p style="margin-left: 30px;">Choose a random box for a quote</p>
+<br>
+
+<center>
+    <div id="main" style="display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;">
+
+      
+
+        <div id="boxgame" onclick="oddman()">
+            <div id="findout">
+           <p id="findans">click me</p>
+           </div>
+           
+        </div>
+    
+        <div id="boxgame">
+        <p>click me</p>
+        </div>
+
+    
+        <div id="boxgame" onclick="oddman2()">
+            <div id="findout">
+           <p id="findans2">click me</p>
+           </div>
+           
+        </div>
+
+        <div id="boxgame">
+           <p>click me</p>
+
+        </div>
+        
+    
+        <div id="boxgame" onclick="oddman3()">
+            <div id="findout">
+           <p id="findans3">click me</p>
+           </div>
+           
+        </div>
+       
+        <div id="boxgame">
+            <p>click me</p>
+            
+         </div>
+
+         <div id="boxgame">
+            <p>click me</p>
+            
+         </div>
+    
+        </div>
+    </center>
+
+
+
+
+    <script>
+const links=['https://www.youtube.com/watch?v=K_8yRH2KPVo',
+'https://www.youtube.com/watch?v=pjI1Cb-s8E4',
+'https://www.youtube.com/watch?v=Rif-RTvmmss',
+'https://www.youtube.com/watch?v=F8c8f2nK82w',
+'https://www.youtube.com/watch?v=SZiwpL62to8'
+];
+    function generate(){
+
+        const indexnum=Math.floor(Math.random()*links.length);
+        const ranlink=links[indexnum];
+        document.getElementById('ans').innerHTML=`<a href="${ranlink}" target="_blank">${ranlink}</a>`
+    }
+
+
+    function oddman(){
+        document.getElementById('findans').innerHTML="First,accept the sadness.Realize that without<br> losing,wining isnt so great."
+    }
+
+    function oddman2(){
+        document.getElementById('findans2').innerHTML="The feeling which you are currenlty experiencing will<br> not last forever"
+    }
+
+    function oddman3(){
+        document.getElementById('findans3').innerHTML="Everything will be alright soon honey"
+    }
+</script>
+</body>
+</html>

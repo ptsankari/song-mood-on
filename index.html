@@ -9,6 +9,37 @@
     <title>mood and motivation</title>
 </head>
 <style>
+
+@import url('https://fonts.googleapis.com/css2?family=Alfa+Slab+One&display=swap');
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+
+.waviy {
+  position: relative;
+  font-size: 60px;
+  margin-top: 170px;
+}
+.waviy span {
+  font-family:'Poppins', sans-serif;
+  position: relative;
+  display: inline-block;
+  color:black;
+  text-transform: uppercase;
+  animation: waviy 2.5s infinite;
+  animation-delay: calc(.1s * var(--i));
+  
+}
+@keyframes waviy {
+  
+  20% {
+    transform: translateY(-20px)
+  }
+}
+
     h2{
         font-family:'Poppins', sans-serif;
         font-size: 50px;
@@ -82,14 +113,50 @@ but1::before{
 }
 </style>
 <body style="background-color: #eef7fb;">
-  <center><h2>Hey! How are you feeling today?</h2></center>  
+ 
+<center>
+    <div class="waviy">
+      <span style="--i:1">H</span>
+      <span style="--i:2">O</span>
+      <span style="--i:3">W</span>
+      <span style="--i:4"> </span>
+      <span style="--i:5">A</span>
+      <span style="--i:6">R</span>
+      <span style="--i:7">E</span>
+      <span style="--i:8"> </span>
+      <span style="--i:9">Y</span>
+      <span style="--i:10">O</span>
+      <span style="--i:11">U</span>
+      <span style="--i:12"> </span>
+      <br>
+      <span style="--i:13">F</span>
+      <span style="--i:14">E</span>
+      <span style="--i:15">E</span>
+      <span style="--i:16">L</span>
+      <span style="--i:17">I</span>
+      <span style="--i:18">N</span>
+      <span style="--i:19">G</span>
+      <span style="--i:20"> </span>
+      <span style="--i:21">T</span>
+      <span style="--i:22">O</span>
+      <span style="--i:23">D</span>
+      <span style="--i:24">A</span>
+      <span style="--i:25">Y</span>
+      <span style="--i:26">?</span>
 
+
+
+
+     </div>
+  </center> 
+
+  <br><br><br>
 <center>
   <div id="main_block">
     <button class="but1"><a href="happy.html">Happy</a></button>
     <button class="but2"><a href="tired.html">Relaxed</a></button>
     <button class="but3"><a href="sad.html">Sad</a></button>
-    <button class="but4">Feelin like an icon</button>
+    <button class="but4"><a href="icon.html">Feelin like an icon</a></button>
     
   </div>
   </center>
